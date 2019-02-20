@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://andrewreifman.com/se7en/form-components.html -->
+<html class="csstransforms csstransforms3d csstransitions js flexbox flexboxlegacy canvas canvastext postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>
+      hightop - Dashboard
+    </title>
+    <link href="./hightop - Dashboard_files/css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/bootstrap.min.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/font-awesome.min.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/hightop-font.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/isotope.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/jquery.fancybox.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/fullcalendar.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/wizard.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/select2.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/morris.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/datatables.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/datepicker.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/timepicker.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/colorpicker.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/bootstrap-switch.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/bootstrap-editable.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/daterange-picker.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/typeahead.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/summernote.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/ladda-themeless.min.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/social-buttons.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/jquery.fileupload-ui.css" media="screen" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/dropzone.css" media="screen" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/nestable.css" media="screen" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/pygments.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/style.css" media="all" rel="stylesheet" type="text/css"><link href="./hightop - Dashboard_files/green.css" media="all" rel="alternate stylesheet" title="green-theme" type="text/css" disabled=""><link href="./hightop - Dashboard_files/orange.css" media="all" rel="alternate stylesheet" title="orange-theme" type="text/css" disabled=""><link href="./hightop - Dashboard_files/magenta.css" media="all" rel="alternate stylesheet" title="magenta-theme" type="text/css" disabled=""><link href="./hightop - Dashboard_files/gray.css" media="all" rel="alternate stylesheet" title="gray-theme" type="text/css"><div class="fit-vids-style" id="fit-vids-style" style="display: none;">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div><script src="./hightop - Dashboard_files/jquery-1.10.2.min.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/jquery-ui.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/bootstrap.min.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/raphael.min.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/selectivizr-min.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/jquery.mousewheel.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/jquery.vmap.min.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/jquery.vmap.sampledata.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/jquery.vmap.world.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/jquery.bootstrap.wizard.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/fullcalendar.min.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/gcal.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/jquery.dataTables.min.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/datatable-editable.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/jquery.easy-pie-chart.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/excanvas.min.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/jquery.isotope.min.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/isotope_extras.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/modernizr.custom.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/jquery.fancybox.pack.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/select2.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/styleswitcher.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/wysiwyg.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/typeahead.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/summernote.min.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/jquery.inputmask.min.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/jquery.validate.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/bootstrap-fileupload.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/bootstrap-datepicker.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/bootstrap-timepicker.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/bootstrap-colorpicker.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/bootstrap-switch.min.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/typeahead.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/spin.min.js" type="text/javascript"></script><style type="text/css"></style><script src="./hightop - Dashboard_files/ladda.min.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/moment.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/mockjax.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/bootstrap-editable.min.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/xeditable-demo-mock.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/xeditable-demo.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/address.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/daterange-picker.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/date.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/morris.min.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/skycons.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/fitvids.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/jquery.sparkline.min.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/dropzone.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/jquery.nestable.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/main.js" type="text/javascript"></script><script src="./hightop - Dashboard_files/respond.js" type="text/javascript"></script>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <style type="text/css">.fancybox-margin{margin-right:8px;}</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+  <body class="page-header-fixed bg-1">
+    <div class="modal-shiftfix">
+      <!-- Navigation -->
+      <div class="navbar navbar-fixed-top scroll-hide" style="overflow: visible;">
+        <div class="container-fluid top-bar">
+          <div class="pull-right">
+            <ul class="nav navbar-nav pull-right">
+              <li class="dropdown notifications hidden-xs">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="http://andrewreifman.com/se7en/form-components.html#"><span aria-hidden="true" class="hightop-flag"></span>
+                  <div class="sr-only">
+                    Notifications
+                  </div>
+                  <p class="counter">
+                    4
+                  </p>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://andrewreifman.com/se7en/form-components.html#">
+                    <div class="notifications label label-info">
+                      New
+                    </div>
+                    <p>
+                      New user added: Jane Smith
+                    </p></a>
+                    
+                  </li>
+                  <li><a href="http://andrewreifman.com/se7en/form-components.html#">
+                    <div class="notifications label label-info">
+                      New
+                    </div>
+                    <p>
+                      Sales targets available
+                    </p></a>
+                    
+                  </li>
+                  <li><a href="http://andrewreifman.com/se7en/form-components.html#">
+                    <div class="notifications label label-info">
+                      New
+                    </div>
+                    <p>
+                      New performance metric added
+                    </p></a>
+                    
+                  </li>
+                  <li><a href="http://andrewreifman.com/se7en/form-components.html#">
+                    <div class="notifications label label-info">
+                      New
+                    </div>
+                    <p>
+                      New growth data available
+                    </p></a>
+                    
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown messages hidden-xs">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="http://andrewreifman.com/se7en/form-components.html#"><span aria-hidden="true" class="hightop-envelope"></span>
+                  <div class="sr-only">
+                    Messages
+                  </div>
+                  <p class="counter">
+                    3
+                  </p>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://andrewreifman.com/se7en/form-components.html#">
+                    <img width="34" height="34" src="./hightop - Dashboard_files/avatar-male2.png">Could we meet today? I wanted...</a>
+                  </li>
+                  <li><a href="http://andrewreifman.com/se7en/form-components.html#">
+                    <img width="34" height="34" src="./hightop - Dashboard_files/avatar-female.png">Important data needs your analysis...</a>
+                  </li>
+                  <li><a href="http://andrewreifman.com/se7en/form-components.html#">
+                    <img width="34" height="34" src="./hightop - Dashboard_files/avatar-male2.png">Buy Se7en today, it's a great theme...</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown user hidden-xs"><a data-toggle="dropdown" class="dropdown-toggle" href="http://andrewreifman.com/se7en/form-components.html#">
+                <img width="34" height="34" src="./hightop - Dashboard_files/avatar-male.jpg">John Smith<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://andrewreifman.com/se7en/form-components.html#">
+                    <i class="fa fa-user"></i>My Account</a>
+                  </li>
+                  <li><a href="http://andrewreifman.com/se7en/form-components.html#">
+                    <i class="fa fa-gear"></i>Account Settings</a>
+                  </li>
+                  <li><a href="http://andrewreifman.com/se7en/login1.html">
+                    <i class="fa fa-sign-out"></i>Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <button class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="logo" href="http://andrewreifman.com/se7en/index.html">Hightop</a>
+          <form class="navbar-form form-inline col-lg-2 hidden-xs">
+            <input class="form-control" placeholder="Search" type="text">
+          </form>
+        </div>
+        <div class="container-fluid main-nav clearfix">
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li>
+                <a href="http://andrewreifman.com/se7en/index.html"><span aria-hidden="true" class="hightop-home"></span>Dashboard</a>
+              </li>
+              <li><a href="http://andrewreifman.com/se7en/social.html">
+                <span aria-hidden="true" class="hightop-feed"></span>Social Feed</a>
+              </li>
+              <li class="dropdown open"><a data-toggle="dropdown" href="http://andrewreifman.com/se7en/form-components.html#">
+                <span aria-hidden="true" class="hightop-star"></span>UI Features<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/buttons.html">Buttons</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/fontawesome.html">Font Awesome Icons</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/glyphicons.html">Glyphicons</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/components.html">Components</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/widgets.html">Widgets</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/nestable-lists.html">Nestable Lists</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/typo.html">Typography</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/grid.html">Grid Layout</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown current"><a data-toggle="dropdown" class="current" href="http://andrewreifman.com/se7en/form-components.html#">
+                <span aria-hidden="true" class="hightop-forms"></span>Forms<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="current" href="./hightop - Dashboard_files/hightop - Dashboard.html">Form Components</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/form-advanced.html">Advanced Forms</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/xeditable.html">X-Editable</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/file-upload.html">Multiple File Upload</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/dropzone-file-upload.html">Dropzone File Upload</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown"><a data-toggle="dropdown" href="http://andrewreifman.com/se7en/form-components.html#">
+                <span aria-hidden="true" class="hightop-tables"></span>Tables<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/tables.html">Basic tables</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/datatables.html">DataTables</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/datatables-editable.html">Editable DataTables</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="http://andrewreifman.com/se7en/charts.html">
+                <span aria-hidden="true" class="hightop-charts"></span>Charts</a>
+              </li>
+              <li class="dropdown"><a data-toggle="dropdown" href="http://andrewreifman.com/se7en/form-components.html#">
+                <span aria-hidden="true" class="hightop-pages"></span>Pages<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/chat.html">Chat</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/calendar.html">Calendar</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/timeline.html">Timeline</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/login1.html">Login 1</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/login2.html">Login 2</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/messages.html">Messages/Inbox</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/pricing.html">Pricing Tables</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/signup1.html">Sign Up 1</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/signup2.html">Sign Up 2</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/invoice.html">Invoice</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/faq.html">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/filters.html">Filter Results</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/404-page.html">404 Page</a>
+                  </li>
+                  <li>
+                    <a href="http://andrewreifman.com/se7en/500-page.html">500 Error</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="http://andrewreifman.com/se7en/gallery.html">
+                <span aria-hidden="true" class="hightop-gallery"></span>Gallery</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Navigation -->
+      <div class="container-fluid main-content"><div class="page-title">
+  <h1>
+    Form Components
+  </h1>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="widget-container fluid-height clearfix">
+      <div class="heading">
+        <i class="fa fa-bars"></i>Basic Components
+      </div>
+      <div class="widget-content padded">
+        <form action="http://andrewreifman.com/se7en/form-components.html#" class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-md-2">Input</label>
+            <div class="col-md-7">
+              <input class="form-control" placeholder="Text" type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Dropdown</label>
+            <div class="col-md-7">
+              <select class="form-control"><option value="Category 1">Option 1</option><option value="Category 2">Option 2</option><option value="Category 3">Option 3</option><option value="Category 4">Option 4</option></select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Multi-Select</label>
+            <div class="col-md-7">
+              <select class="form-control" multiple=""><option value="Category 1">Option 1</option><option value="Category 2">Option 2</option><option value="Category 3">Option 3</option><option value="Category 4">Option 4</option></select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Username Input</label>
+            <div class="col-md-7">
+              <div class="input-group">
+                <span class="input-group-addon">@</span><input class="form-control" placeholder="Username" type="text">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Currency Input</label>
+            <div class="col-md-7">
+              <div class="input-group">
+                <span class="input-group-addon">$</span><input class="form-control" type="text"><span class="input-group-addon">.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Button Add-on</label>
+            <div class="col-md-7">
+              <div class="input-group">
+                <input class="form-control" type="text"><span class="input-group-btn"><button class="btn btn-default" type="button">Go</button></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Dropdown Add-on</label>
+            <div class="col-md-7">
+              <div class="input-group">
+                <input class="form-control" type="text">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">Actions<span class="caret"></span></button>
+                    <ul class="dropdown-menu pull-right">
+                      <li>
+                        <a href="http://andrewreifman.com/se7en/form-components.html#">Action 1</a>
+                      </li>
+                      <li>
+                        <a href="http://andrewreifman.com/se7en/form-components.html#">Action 2</a>
+                      </li>
+                      <li>
+                        <a href="http://andrewreifman.com/se7en/form-components.html#">Action 3</a>
+                      </li>
+                    </ul>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+          <fieldset disabled="">
+            <div class="form-group">
+              <label class="control-label col-md-2" for="disabledInput">Disabled Input</label>
+              <div class="col-md-7">
+                <input class="form-control" id="disabledInput" placeholder="Disabled input" type="text">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-2" for="disabledInput">Disabled Select</label>
+              <div class="col-md-7">
+                <select class="form-control" id="disabledSelect"><option>Disabled select</option></select>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <label class="control-label col-md-2">Radio Buttons</label>
+            <div class="col-md-7">
+              <label class="radio" for="option1"><input id="option1" name="optionsRadios1" type="radio" value="option1"><span>Option 1</span></label><label class="radio"><input checked="" name="optionsRadios1" type="radio" value="option2"><span>Option 2</span></label><label class="radio"><input name="optionsRadios1" type="radio" value="option3"><span>Option 3</span></label><label class="radio"><input name="optionsRadios1" type="radio" value="option4"><span>Option 4</span></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Radio Buttons</label>
+            <div class="col-md-7">
+              <label class="radio-inline"><input name="optionsRadios2" type="radio" value="option1"><span>Option 1</span></label><label class="radio-inline"><input checked="" name="optionsRadios2" type="radio" value="option2"><span>Option 2</span></label><label class="radio-inline"><input name="optionsRadios2" type="radio" value="option3"><span>Option 3</span></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Checkbox</label>
+            <div class="col-md-7">
+              <label class="checkbox"><input type="checkbox"><span>Checkbox 1</span></label><label class="checkbox"><input type="checkbox"><span>Checkbox 2</span></label><label class="checkbox"><input type="checkbox"><span>Checkbox 3</span></label><label class="checkbox"><input type="checkbox"><span>Checkbox 4</span></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Checkbox</label>
+            <div class="col-md-7">
+              <label class="checkbox-inline"><input type="checkbox"><span>Checkbox 1</span></label><label class="checkbox-inline"><input type="checkbox"><span>Checkbox 2</span></label><label class="checkbox-inline"><input type="checkbox"><span>Checkbox 3</span></label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Textarea</label>
+            <div class="col-md-7">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Form Actions</label>
+            <div class="col-md-7">
+              <button class="btn btn-primary" type="submit">Submit</button><button class="btn btn-default-outline">Cancel            </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="widget-container fluid-height clearfix">
+      <div class="heading">
+        <i class="fa fa-toggle-down"></i>Select2 Dropdowns
+      </div>
+      <div class="widget-content padded">
+        <form action="http://andrewreifman.com/se7en/form-components.html#" class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-md-2">Select2 Dropdown</label>
+            <div class="col-md-7">
+              <div class="select2-container select2able" id="s2id_autogen1"><a href="javascript:void(0)" onclick="return false;" class="select2-choice" tabindex="-1">   <span class="select2-chosen">Option 1</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen2"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><select class="select2able select2-offscreen" tabindex="-1"><option value="Category 1">Option 1</option><option value="Category 2">Option 2</option><option value="Category 3">Option 3</option><option value="Category 4">Option 4</option></select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Multi-Select2</label>
+            <div class="col-md-7">
+              <div class="select2-container select2-container-multi select2able" id="s2id_autogen3"><ul class="select2-choices">  <li class="select2-search-field">    <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" id="s2id_autogen4" style="width: 20px;">  </li></ul><div class="select2-drop select2-drop-multi select2-display-none">   <ul class="select2-results">   <li class="select2-no-results">No matches found</li></ul></div></div><select class="select2able select2-offscreen" multiple="" tabindex="-1"><option value="Category 1">Option 1</option><option value="Category 2">Option 2</option><option value="Category 3">Option 3</option><option value="Category 4">Option 4</option></select>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="widget-container fluid-height clearfix">
+      <div class="heading">
+        <i class="fa fa-comment"></i>Autocomplete
+      </div>
+      <div class="widget-content padded">
+        <form action="http://andrewreifman.com/se7en/form-components.html#" class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-md-2">U.S. States</label>
+            <div class="col-md-7">
+              <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="tt-hint" type="text" autocomplete="off" spellcheck="off" disabled="" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><input autocomplete="off" class="form-control states typeahead tt-query" dir="auto" placeholder="Search for a U.S. state" spellcheck="false" type="text" style="position: relative; vertical-align: top; background-color: transparent;"><span style="position: absolute; left: -9999px; visibility: hidden; white-space: nowrap; font-family: Lato, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></span><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"></span></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Countries</label>
+            <div class="col-md-7">
+              <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="tt-hint" type="text" autocomplete="off" spellcheck="off" disabled="" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><input autocomplete="off" class="form-control countries typeahead tt-query" dir="auto" placeholder="Search for a country" spellcheck="false" type="text" style="position: relative; vertical-align: top; background-color: transparent;"><span style="position: absolute; left: -9999px; visibility: hidden; white-space: nowrap; font-family: Lato, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></span><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"></span></span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="widget-container fluid-height clearfix">
+      <div class="heading">
+        <i class="fa fa-check"></i>Toggle Switches
+      </div>
+      <div class="widget-content padded">
+        <form action="http://andrewreifman.com/se7en/form-components.html#" class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-md-2">Switch Sizes</label>
+            <div class="col-md-7">
+              <div class="toggle-switch switch-large has-switch">
+                <div class="switch-animate switch-on"><input checked="" type="checkbox"><span class="switch-left switch-large">ON</span><label class="switch-large">&nbsp;</label><span class="switch-right switch-large">OFF</span></div>
+              </div>
+              <div class="toggle-switch has-switch">
+                <div class="switch-animate switch-on"><input checked="" type="checkbox"><span class="switch-left">ON</span><label>&nbsp;</label><span class="switch-right">OFF</span></div>
+              </div>
+              <div class="toggle-switch switch-small has-switch">
+                <div class="switch-animate switch-on"><input checked="" type="checkbox"><span class="switch-left switch-small">ON</span><label class="switch-small">&nbsp;</label><span class="switch-right switch-small">OFF</span></div>
+              </div>
+              <div class="toggle-switch switch-mini has-switch">
+                <div class="switch-animate switch-on"><input checked="" type="checkbox"><span class="switch-left switch-mini">ON</span><label class="switch-mini">&nbsp;</label><span class="switch-right switch-mini">OFF</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Switch Colors</label>
+            <div class="col-md-7">
+              <div class="toggle-switch has-switch" data-off="info" data-on="primary">
+                <div class="switch-animate switch-on"><input checked="" type="checkbox"><span class="switch-left switch-primary">ON</span><label>&nbsp;</label><span class="switch-right switch-info">OFF</span></div>
+              </div>
+              <div class="toggle-switch has-switch" data-off="success" data-on="info">
+                <div class="switch-animate switch-on"><input checked="" type="checkbox"><span class="switch-left switch-info">ON</span><label>&nbsp;</label><span class="switch-right switch-success">OFF</span></div>
+              </div>
+              <div class="toggle-switch has-switch" data-off="warning" data-on="success">
+                <div class="switch-animate switch-on"><input checked="" type="checkbox"><span class="switch-left switch-success">ON</span><label>&nbsp;</label><span class="switch-right switch-warning">OFF</span></div>
+              </div>
+              <div class="toggle-switch has-switch" data-off="danger" data-on="warning">
+                <div class="switch-animate switch-on"><input checked="" type="checkbox"><span class="switch-left switch-warning">ON</span><label>&nbsp;</label><span class="switch-right switch-danger">OFF</span></div>
+              </div>
+              <div class="toggle-switch has-switch" data-off="default" data-on="danger">
+                <div class="switch-animate switch-on"><input checked="" type="checkbox"><span class="switch-left switch-danger">ON</span><label>&nbsp;</label><span class="switch-right switch-default">OFF</span></div>
+              </div>
+              <div class="toggle-switch has-switch" data-off="primary" data-on="default">
+                <div class="switch-animate switch-on"><input checked="" type="checkbox"><span class="switch-left switch-default">ON</span><label>&nbsp;</label><span class="switch-right switch-primary">OFF</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Different Labels</label>
+            <div class="col-md-7">
+              <div class="toggle-switch text-toggle-switch has-switch" data-off-label="GOODBYE" data-on="primary" data-on-label="HELLO" style="width:200px;">
+                <div class="switch-animate switch-on"><input checked="" type="checkbox"><span class="switch-left switch-primary">HELLO</span><label>&nbsp;</label><span class="switch-right">GOODBYE</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Authentic Toggle Switch</label>
+            <div class="col-md-7 clearfix">
+              <div class="holder">
+                <input checked="checked" class="check-ios" id="check" name="check" type="checkbox" value="None"><label for="check"></label><span></span>
+              </div>
+              <em>(works only in modern browsers)</em>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="widget-container">
+      <div class="heading">
+        <i class="fa fa-shield"></i>Form Validation
+      </div>
+      <div class="widget-content padded">
+        <form action="" id="validate-form" method="get" novalidate="novalidate">
+          <fieldset>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="firstname">First Name</label><input class="form-control" id="firstname" name="firstname" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="username">Username</label><input class="form-control" id="username" name="username" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label><input class="form-control" id="password" name="password" type="password">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="lastname">Last Name</label><input class="form-control" id="lastname" name="lastname" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label><input class="form-control" id="email" name="email" type="email">
+                </div>
+                <div class="form-group">
+                  <label for="confirm_password">Confirm Password</label><input class="form-control" id="confirm_password" name="confirm_password" type="password">
+                </div>
+              </div>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Validate form">
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="widget-container">
+      <div class="heading">
+        <i class="fa fa-shield"></i>Validation States
+      </div>
+      <div class="widget-content padded">
+        <div class="row">
+          <form class="col-md-6">
+            <div class="form-group has-warning">
+              <label class="control-label" for="inputWarning">Warning</label><input class="form-control" id="inputWarning" type="text">
+            </div>
+            <div class="form-group has-error">
+              <label class="control-label" for="inputError">Error</label><input class="form-control" id="inputError" type="text">
+            </div>
+            <div class="form-group has-success">
+              <label class="control-label" for="inputSuccess">Success</label><input class="form-control" id="inputSuccess" type="text">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="widget-container fluid-height clearfix">
+      <div class="heading">
+        <i class="fa fa-calendar"></i>Date Pickers
+      </div>
+      <div class="widget-content padded">
+        <form action="http://andrewreifman.com/se7en/form-components.html#" class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-md-2">Default</label>
+            <div class="col-md-3">
+              <input class="form-control datepicker" type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">As a Component</label>
+            <div class="col-md-3">
+              <div class="input-group date datepicker">
+                <input class="form-control" type="text"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Autoclose</label>
+            <div class="col-md-3">
+              <div class="input-group date datepicker" data-date-autoclose="true" data-date-format="dd-mm-yyyy">
+                <input class="form-control" type="text"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Start With the Year</label>
+            <div class="col-md-3">
+              <div class="input-group date datepicker" data-date-autoclose="true" data-date-format="dd.mm.yyyy" data-date-start-view="2">
+                <input class="form-control" type="text"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Date Range 1</label>
+            <div class="col-sm-2">
+              <input class="form-control" data-date-autoclose="true" data-date-format="dd-mm-yyyy" id="dpd1" placeholder="Start date" type="text">
+            </div>
+            <div class="col-sm-2">
+              <input class="form-control" data-date-autoclose="true" data-date-format="dd-mm-yyyy" id="dpd2" placeholder="End date" type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Date Range 2</label>
+            <div class="col-md-3">
+              <div class="input-group date">
+                <input class="form-control date-range" type="text"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="widget-container fluid-height clearfix">
+      <div class="heading">
+        <i class="fa fa-clock-o"></i>Time Pickers
+      </div>
+      <div class="widget-content padded">
+        <form action="http://andrewreifman.com/se7en/form-components.html#" class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-md-2">Default</label>
+            <div class="col-md-3">
+              <div class="input-group bootstrap-timepicker"><div class="bootstrap-timepicker-widget dropdown-menu"><table><tbody><tr><td><a href="http://andrewreifman.com/se7en/form-components.html#" data-action="incrementHour"><i class="fa fa-chevron-up"></i></a></td><td class="separator">&nbsp;</td><td><a href="http://andrewreifman.com/se7en/form-components.html#" data-action="incrementMinute"><i class="fa fa-chevron-up"></i></a></td><td class="separator">&nbsp;</td><td class="meridian-column"><a href="http://andrewreifman.com/se7en/form-components.html#" data-action="toggleMeridian"><i class="fa fa-chevron-up"></i></a></td></tr><tr><td><input type="text" name="hour" class="bootstrap-timepicker-hour form-control" maxlength="2"></td> <td class="separator">:</td><td><input type="text" name="minute" class="bootstrap-timepicker-minute form-control" maxlength="2"></td> <td class="separator">&nbsp;</td><td><input type="text" name="meridian" class="bootstrap-timepicker-meridian form-control" maxlength="2"></td></tr><tr><td><a href="http://andrewreifman.com/se7en/form-components.html#" data-action="decrementHour"><i class="fa fa-chevron-down"></i></a></td><td class="separator"></td><td><a href="http://andrewreifman.com/se7en/form-components.html#" data-action="decrementMinute"><i class="fa fa-chevron-down"></i></a></td><td class="separator">&nbsp;</td><td><a href="http://andrewreifman.com/se7en/form-components.html#" data-action="toggleMeridian"><i class="fa fa-chevron-down"></i></a></td></tr></tbody></table></div>
+                <input class="form-control" id="timepicker-default" type="text"><span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">24 Hour</label>
+            <div class="col-md-3">
+              <div class="input-group bootstrap-timepicker"><div class="bootstrap-timepicker-widget dropdown-menu"><table><tbody><tr><td><a href="http://andrewreifman.com/se7en/form-components.html#" data-action="incrementHour"><i class="fa fa-chevron-up"></i></a></td><td class="separator">&nbsp;</td><td><a href="http://andrewreifman.com/se7en/form-components.html#" data-action="incrementMinute"><i class="fa fa-chevron-up"></i></a></td><td class="separator">&nbsp;</td><td><a href="http://andrewreifman.com/se7en/form-components.html#" data-action="incrementSecond"><i class="fa fa-chevron-up"></i></a></td></tr><tr><td><input type="text" name="hour" class="bootstrap-timepicker-hour form-control" maxlength="2"></td> <td class="separator">:</td><td><input type="text" name="minute" class="bootstrap-timepicker-minute form-control" maxlength="2"></td> <td class="separator">:</td><td><input type="text" name="second" class="bootstrap-timepicker-second form-control" maxlength="2"></td></tr><tr><td><a href="http://andrewreifman.com/se7en/form-components.html#" data-action="decrementHour"><i class="fa fa-chevron-down"></i></a></td><td class="separator"></td><td><a href="http://andrewreifman.com/se7en/form-components.html#" data-action="decrementMinute"><i class="fa fa-chevron-down"></i></a></td><td class="separator">&nbsp;</td><td><a href="http://andrewreifman.com/se7en/form-components.html#" data-action="decrementSecond"><i class="fa fa-chevron-down"></i></a></td></tr></tbody></table></div>
+                <input class="form-control" id="timepicker-24h" type="text"><span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">No Dropdown</label>
+            <div class="col-md-3">
+              <div class="bootstrap-timepicker">
+                <input class="form-control" id="timepicker-noTemplate" type="text"><i class="fa fa-clock-o"></i>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="widget-container fluid-height clearfix">
+      <div class="heading">
+        <i class="fa fa-tint"></i>Color Pickers
+      </div>
+      <div class="widget-content padded">
+        <form action="http://andrewreifman.com/se7en/form-components.html#" class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-md-2">Default</label>
+            <div class="col-sm-4">
+              <input class="form-control" id="cp1" type="text" value="#8fff00">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">RGBA</label>
+            <div class="col-sm-4">
+              <input class="form-control" data-color-format="rgba" id="cp2" type="text" value="rgb(0,194,255,0.78)">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">As a Component</label>
+            <div class="col-sm-4">
+              <div class="input-group color" data-color="rgb(200, 0, 0)" data-color-format="rgb" id="cp3">
+                <input class="form-control" readonly="" type="text" value="rgb(200, 0, 0)"><span class="input-group-addon"><i style="background-color: rgb(200, 0, 0);"></i></span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="widget-container fluid-height clearfix">
+      <div class="heading">
+        <i class="fa fa-reorder"></i>Input Masks
+      </div>
+      <div class="widget-content padded">
+        <form action="http://andrewreifman.com/se7en/form-components.html#" class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-md-2">Date 1</label>
+            <div class="col-md-3">
+              <input class="form-control" data-inputmask="&#39;alias&#39;: &#39;mm/dd/yyyy&#39;" type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Date 2</label>
+            <div class="col-md-3">
+              <input class="form-control" data-inputmask="&#39;alias&#39;: &#39;dd/mm/yyyy&#39;" type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Phone Number</label>
+            <div class="col-md-3">
+              <input class="form-control" data-inputmask="&#39;mask&#39;: [&#39;(999) 999-9999&#39;]" type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Social Security #</label>
+            <div class="col-md-3">
+              <input class="form-control" data-inputmask="&#39;mask&#39;: [&#39;999-99-9999&#39;]" type="text">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="widget-container">
+      <div class="heading">
+        <i class="fa fa-cloud-upload"></i>File Upload
+      </div>
+      <div class="widget-content padded">
+        <form action="http://andrewreifman.com/se7en/form-components.html#" class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-md-2">Custom File Upload</label>
+            <div class="col-md-4">
+              <div class="fileupload fileupload-new" data-provides="fileupload">
+                <div class="input-group">
+                  <div class="form-control">
+                    <i class="fa fa-file fileupload-exists"></i><span class="fileupload-preview"></span>
+                  </div>
+                  <div class="input-group-btn">
+                    <a class="btn btn-default fileupload-exists" data-dismiss="fileupload" href="http://andrewreifman.com/se7en/form-components.html#">Remove</a><span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Without Input</label>
+            <div class="col-md-4">
+              <div class="fileupload fileupload-new" data-provides="fileupload">
+                <span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file"></span><span class="fileupload-preview"></span><button class="close fileupload-exists" data-dismiss="fileupload" style="float:none" type="button">×</button>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">With Preview</label>
+            <div class="col-md-4">
+              <div class="fileupload fileupload-new" data-provides="fileupload">
+                <div class="fileupload-new img-thumbnail" style="width: 200px; height: 150px;">
+                  <img src="./hightop - Dashboard_files/AAAAAA&text=no+image">
+                </div>
+                <div class="fileupload-preview fileupload-exists img-thumbnail" style="width: 200px; max-height: 150px"></div>
+                <div>
+                  <span class="btn btn-default btn-file"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file"></span><a class="btn btn-default fileupload-exists" data-dismiss="fileupload" href="http://andrewreifman.com/se7en/form-components.html#">Remove</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="widget-container fluid-height">
+      <div class="heading">
+        <i class="fa fa-move"></i>Drag and Drop Upload
+      </div>
+      <div class="widget-content padded">
+        <div class="single-file-drop">
+          <h4>
+            Drag and drop files here
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+    <div class="style-selector">
+      <div class="style-selector-container">
+        <h2>
+          Layout Style
+        </h2>
+        <select name="layout"><option value="fluid" selected="selected">Fluid</option><option value="boxed">Boxed</option></select>
+        <h2>
+          Navigation Style
+        </h2>
+        <select name="nav"><option value="top" selected="selected">Top</option><option value="left">Left</option></select>
+        <h2>
+          Color Options
+        </h2>
+        <ul class="color-options clearfix">
+          <li>
+            <a class="blue" href="javascript:chooseStyle('none', 30)"></a>
+          </li>
+          <li>
+            <a class="green" href="javascript:chooseStyle('green-theme', 30)"></a>
+          </li>
+          <li>
+            <a class="orange" href="javascript:chooseStyle('orange-theme', 30)"></a>
+          </li>
+          <li>
+            <a class="magenta" href="javascript:chooseStyle('magenta-theme', 30)"></a>
+          </li>
+          <li>
+            <a class="gray" href="javascript:chooseStyle('gray-theme', 30)"></a>
+          </li>
+        </ul>
+        <h2>
+          Background Patterns
+        </h2>
+        <ul class="pattern-options clearfix">
+          <li>
+            <a class="active" href="http://andrewreifman.com/se7en/form-components.html#" id="bg-1"></a>
+          </li>
+          <li>
+            <a href="http://andrewreifman.com/se7en/form-components.html#" id="bg-2"></a>
+          </li>
+          <li>
+            <a href="http://andrewreifman.com/se7en/form-components.html#" id="bg-3"></a>
+          </li>
+          <li>
+            <a href="http://andrewreifman.com/se7en/form-components.html#" id="bg-4"></a>
+          </li>
+          <li>
+            <a href="http://andrewreifman.com/se7en/form-components.html#" id="bg-5"></a>
+          </li>
+        </ul>
+        <div class="style-toggle closed">
+          <span aria-hidden="true" class="hightop-gear"></span>
+        </div>
+      </div>
+    </div>
+  
+<div class="daterangepicker dropdown-menu opensright"><div class="calendar right" style="display: block;"><table class="table-condensed"><thead><tr><th class="prev available"><i class="fa.fa-angle-left"></i></th><th colspan="5" style="width: auto">October 2015</th><th></th></tr><tr><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr></thead><tbody><tr><td class="off disabled" title="r0c0">27</td><td class="off disabled" title="r0c1">28</td><td class="off disabled" title="r0c2">29</td><td class="off disabled" title="r0c3">30</td><td class="off disabled" title="r0c4">1</td><td class="off disabled" title="r0c5">2</td><td class="off disabled" title="r0c6">3</td></tr><tr><td class="off disabled" title="r1c0">4</td><td class="off disabled" title="r1c1">5</td><td class="off disabled" title="r1c2">6</td><td class="off disabled" title="r1c3">7</td><td class="off disabled" title="r1c4">8</td><td class="off disabled" title="r1c5">9</td><td class="off disabled" title="r1c6">10</td></tr><tr><td class="off disabled" title="r2c0">11</td><td class="off disabled" title="r2c1">12</td><td class="off disabled" title="r2c2">13</td><td class="off disabled" title="r2c3">14</td><td class="off disabled" title="r2c4">15</td><td class="off disabled" title="r2c5">16</td><td class="off disabled" title="r2c6">17</td></tr><tr><td class="off disabled" title="r3c0">18</td><td class="off disabled" title="r3c1">19</td><td class="off disabled" title="r3c2">20</td><td class="off disabled" title="r3c3">21</td><td class="off disabled" title="r3c4">22</td><td class="off disabled" title="r3c5">23</td><td class="off disabled" title="r3c6">24</td></tr><tr><td class="off disabled" title="r4c0">25</td><td class="off disabled" title="r4c1">26</td><td class="off disabled" title="r4c2">27</td><td class="off disabled" title="r4c3">28</td><td class="off disabled" title="r4c4">29</td><td class="off disabled" title="r4c5">30</td><td class="off disabled" title="r4c6">31</td></tr><tr><td class="off disabled" title="r5c0">1</td><td class="off disabled" title="r5c1">2</td><td class="off disabled" title="r5c2">3</td><td class="off disabled" title="r5c3">4</td><td class="off disabled" title="r5c4">5</td><td class="off disabled" title="r5c5">6</td><td class="off disabled" title="r5c6">7</td></tr></tbody></table></div><div class="calendar left" style="display: block;"><table class="table-condensed"><thead><tr><th class="prev available"><i class="fa.fa-angle-left"></i></th><th colspan="5" style="width: auto">September 2015</th><th class="next available"><i class="fa.fa-angle-right"></i></th></tr><tr><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr></thead><tbody><tr><td class="available off" title="r0c0">30</td><td class="available off" title="r0c1">31</td><td class="available " title="r0c2">1</td><td class="available " title="r0c3">2</td><td class="available " title="r0c4">3</td><td class="available " title="r0c5">4</td><td class="available " title="r0c6">5</td></tr><tr><td class="available " title="r1c0">6</td><td class="available " title="r1c1">7</td><td class="available " title="r1c2">8</td><td class="available " title="r1c3">9</td><td class="available " title="r1c4">10</td><td class="available " title="r1c5">11</td><td class="available " title="r1c6">12</td></tr><tr><td class="available " title="r2c0">13</td><td class="available " title="r2c1">14</td><td class="available " title="r2c2">15</td><td class="available " title="r2c3">16</td><td class="available " title="r2c4">17</td><td class="available " title="r2c5">18</td><td class="available " title="r2c6">19</td></tr><tr><td class="available " title="r3c0">20</td><td class="available " title="r3c1">21</td><td class="available " title="r3c2">22</td><td class="available active" title="r3c3">23</td><td class="available " title="r3c4">24</td><td class="available " title="r3c5">25</td><td class="available " title="r3c6">26</td></tr><tr><td class="available " title="r4c0">27</td><td class="available " title="r4c1">28</td><td class="available " title="r4c2">29</td><td class="available " title="r4c3">30</td><td class="available off" title="r4c4">1</td><td class="available off" title="r4c5">2</td><td class="available off" title="r4c6">3</td></tr><tr><td class="available off" title="r5c0">4</td><td class="available off" title="r5c1">5</td><td class="available off" title="r5c2">6</td><td class="available off" title="r5c3">7</td><td class="available off" title="r5c4">8</td><td class="available off" title="r5c5">9</td><td class="available off" title="r5c6">10</td></tr></tbody></table></div><div class="ranges"><div class="range_inputs"><div><label for="daterangepicker_start">From</label><input class="m-wrap input-sm form-control" type="text" name="daterangepicker_start" value="" disabled="disabled"></div><div><label for="daterangepicker_end">To</label><input class="m-wrap input-sm form-control" type="text" name="daterangepicker_end" value="" disabled="disabled"></div><button class="btn  btn-success">Apply</button></div></div></div><div class="colorpicker dropdown-menu"><div class="colorpicker-saturation" style="background-color: rgb(143, 255, 0);"><i style="left: 100px; top: 0px;"><b></b></i></div><div class="colorpicker-hue"><i style="top: 76.0130718954249px;"></i></div><div class="colorpicker-alpha"><i style="top: 0px;"></i></div><div class="colorpicker-color"><div style="background-color: rgb(143, 255, 0);"></div></div></div><div class="colorpicker dropdown-menu alpha"><div class="colorpicker-saturation" style="background-color: rgb(0, 194, 255);"><i style="left: 100px; top: 0px;"><b></b></i></div><div class="colorpicker-hue"><i style="top: 46.0130718954247px;"></i></div><div class="colorpicker-alpha" style="background-color: rgb(0, 194, 255);"><i style="top: 22px;"></i></div><div class="colorpicker-color"><div style="background-color: rgba(0, 194, 255, 0.780392);"></div></div></div><div class="colorpicker dropdown-menu"><div class="colorpicker-saturation" style="background-color: rgb(255, 0, 0);"><i style="left: 100px; top: 21.5686274509804px;"><b></b></i></div><div class="colorpicker-hue"><i style="top: 0px;"></i></div><div class="colorpicker-alpha"><i style="top: 0px;"></i></div><div class="colorpicker-color" style="display: none;"><div></div></div></div></body></html>
