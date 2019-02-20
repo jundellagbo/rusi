@@ -3,7 +3,7 @@
 - Automatic Calculation of Payments based on terms.
 - Rebate Payments
 - Inventory System
-- PDF Invoice
+- Print PDF Invoice
 - Restore/Backup Database
 
 ### Donations
