@@ -1,11 +1,19 @@
-## RUSI Installment System
-- Import Database named "dealers.sql"
-- Automatic Calculation of Payments based on terms.
-- Rebate Payments
+## RUSI DEALER SYSTEM
+
+### Features
+- Cash/Installment
+- Automatic Calculate Payments based on Terms
+- Invoice PDF
 - Inventory System
-- Print PDF Invoice
-- Restore/Backup Database
-- PHP Native Code
+- Rebate and Penality Calculations
+- Database Backup
+- Real Time Notifications.
+
+### Technologies
+- PHP Native/Procedural
+- JQuery
+- Bootstrap
+- Javascript
 
 ## Screenshots
 ![9428d13b70868eae6f2397f5d7d0c9c7-original](https://user-images.githubusercontent.com/22125914/58013149-9a59de80-7b28-11e9-8a01-b8782e6192ed.png)
